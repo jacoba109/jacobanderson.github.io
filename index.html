@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jacob Anderson | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Jacob Anderson</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="hero-eyebrow">Computer Science • AI • Data</p>
+          <h1>Hi, I'm Jacob.</h1>
+          <p class="hero-subtitle">
+            I build AI-powered tools and research models – from
+            campus navigation assistants to graph neural networks for molecule
+            property prediction.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View my projects</a>
+            <a href="#contact" class="btn secondary">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I'm an undergraduate computer science student with experience in
+          machine learning, data science, and full-stack development.
+          Recently, I’ve been working as a research assistant on
+          graph neural networks for molecular property prediction and
+          building HuskyNav, an AI-powered campus navigation assistant
+          for new students.
+        </p>
+        <p>
+          I enjoy turning complex technical ideas into working systems:
+          training models, building APIs, and shipping interfaces that
+          people actually use.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1: HuskyNav -->
+          <article class="project-card">
+            <h3>HuskyNav – AI Campus Navigation Assistant</h3>
+            <p class="project-meta">Gemini • LangChain • React • Python • Google Maps API</p>
+            <p>
+              HuskyNav is an AI-powered chatbot-style navigation system for
+              new students on campus. It guides users from their current
+              location all the way to specific rooms inside university
+              buildings, including step-by-step indoor directions.
+            </p>
+            <ul>
+              <li>
+                Built a full-stack system with a React frontend and Python backend,
+                integrating Google Maps API for outdoor routing and AI-generated
+                indoor directions.
+              </li>
+              <li>
+                Used Gemini and LangChain to structure navigation prompts,
+                retrieve building/floor information, and generate clear,
+                human-readable directions.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Project 2: GNN Solubility -->
+          <article class="project-card">
+            <h3>GNN for Molecular Solubility Prediction</h3>
+            <p class="project-meta">Spektral • TensorFlow • Ray Tune • Python</p>
+            <p>
+              Research assistant project benchmarking a graph neural network
+              that predicts aqueous solubility from molecular structure using
+              the AqSolDB dataset (~10,000 molecules).
+            </p>
+            <ul>
+              <li>
+                Prepared the dataset, converted molecular structures into graph
+                representations, and configured the model for regression.
+              </li>
+              <li>
+                Ran large-scale hyperparameter sweeps (500 models) with Ray Tune
+                and achieved strong performance (MSE ≈ 0.25) compared to a naive
+                baseline.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Project 3: Placeholder for another project -->
+          <article class="project-card">
+            <h3>Imagle – Siamese Network Image Matching</h3>
+            <p class="project-meta">TensorFlow • Python • Web App</p>
+            <p>
+              A Wordle-inspired image comparison game powered by a siamese
+              neural network that learns visual similarity between images.
+            </p>
+            <ul>
+              <li>
+                Designed and trained a siamese architecture to embed images
+                into a feature space where similar images are close together.
+              </li>
+              <li>
+                Implemented the game logic and UX to let users iteratively
+                guess the target image based on model feedback.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C# / .NET</li>
+              <li>JavaScript / TypeScript</li>
+              <li>SQL</li>
+              <li>Haskell (academic)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>Graph Neural Networks (GNNs)</li>
+              <li>TensorFlow / Keras</li>
+              <li>Ray Tune (hyperparameter search)</li>
+              <li>Pandas &amp; NumPy</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools &amp; Frameworks</h3>
+            <ul>
+              <li>React</li>
+              <li>LangChain</li>
+              <li>Google Gemini API</li>
+              <li>Google Maps API</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to chat about research, internships, or projects?
+          Feel free to reach out:
+        </p>
+        <ul class="contact-list">
+          <li>Email: <a href="mailto:jacobanderson109@gmail.com">jacobanderson109@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/jacoba109" target="_blank">github.com/jacoba109</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/jacobanderson8731" target="_blank">linkedin.com/in/jacobanderson8731</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jacob Anderson. All rights reserved.</p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
